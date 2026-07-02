@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Natsu Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7fbff;
+      color: #333;
+    }
+
+    header {
+      background: #dbeafe;
+      padding: 25px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #2563eb;
+    }
+
+    header p {
+      margin: 10px 0 0;
+    }
+
+    nav {
+      background: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: #2563eb;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-left: 6px solid #60a5fa;
+      padding-left: 10px;
+      color: #1e3a8a;
+    }
+
+    .box {
+      background: white;
+      border: 1px solid #dbeafe;
+      padding: 20px;
+      margin-top: 15px;
+      border-radius: 10px;
+    }
+
+    .works {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .work {
+      background: white;
+      border: 1px solid #dbeafe;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .work img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #e0f2fe;
+    }
+
+    .work h3 {
+      margin-bottom: 5px;
+      color: #2563eb;
+    }
+
+    footer {
+      text-align: center;
+      background: #dbeafe;
+      padding: 25px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 800px) {
+      .works {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Natsu Nakazawa Portfolio</h1>
+    <p>イラスト制作とWeb制作を勉強中です。</p>
+  </header>
+
+  <nav>
+    <a href="#about">自己紹介</a>
+    <a href="#works">制作実績</a>
+    <a href="#skills">スキル</a>
+    <a href="#contact">連絡先</a>
+  </nav>
+
+  <section id="about">
+    <h2>自己紹介</h2>
+
+    <div class="box">
+      <p>
+        はじめまして、中沢 夏です。<br>
+        イラスト制作が好きで、現在はWebサイト制作も勉強しています。<br>
+        見やすく、使いやすいデザインを作れるように学んでいます。
+        専門学校では主に映像とイラストを学んでおり、クリエイティブなことが好きです。
+
+      </p>
+
+      <p>
+        出身地：千葉県松戸市<br>
+        居住地：北海道札幌市<br>
+        好きなこと：イラスト・音楽・ゲーム
+      </p>
+    </div>
+  </section>
+
+  <section id="works">
+    <h2>制作実績</h2>
+
+    <div class="works">
+      <div class="work">
+        <img src="images/illust1.png" alt="イラスト作品1">
+        <h3>イラスト作品 01</h3>
+        <p>ご依頼で制作したアイコン用のイラストです。</p>
+      </div>
+
+      <div class="work">
+        <img src="images/illust2.png" alt="イラスト作品2">
+        <h3>イラスト作品 02</h3>
+        <p>Vtuberの歌ってみたのサムネイル用のイラストを描きました。</p>
+      </div>
+
+      <div class="work">
+        <img src="images/illust3.png" alt="イラスト作品3">
+        <h3>イラスト作品 03</h3>
+        <p>オリジナルキャラのイラストです。背景と色味を意識して制作しました。</p>
+    
+      </div>
+
+      <div class="work">
+        <img src="images/illust4.png" alt="イラスト作品4">
+        <h3>イラスト作品 04</h3>
+        <p>SDイラストです。</p>
+      </div>
+
+      <div class="work">
+        <img src="images/illust5.png" alt="イラスト作品5">
+        <h3>イラスト作品 05</h3>
+        <p>Vライバー様の商用イラストです。</p>
+      </div>
+
+      <div class="work">
+        <img src="images/illust6.png" alt="イラスト作品6">
+        <h3>デザイン作品 06</h3>
+        <p>オリジナルキャラをイメージしたIRIAM用のアイコンリングとヘッダーを制作しました。</p>
+      </div>
+    </div>
+  </section>
+  <!-- Live2D -->
+
+<section id="live2d">
+    <h2>Live2D作品</h2>
+
+    <div class="works">
+
+        <div class="work">
+            <video controls width="100%">
+                <source src="videos/live2d1.mov" type="video/mp4">
+            </video>
+
+            <h3>Live2D モデル①</h3>
+
+            <p>
+                Live2Dで制作したモデルです。
+            </p>
+        </div>
+
+        <div class="work">
+            <video controls width="100%">
+                <source src="videos/live2d2.mp4" type="video/mp4">
+            </video>
+
+            <h3>Live2D モデル②</h3>
+
+            <p>
+                Live2Dで制作したモデルです。
+            </p>
+        </div>
+<!-- Movie -->
+
+<section id="movie">
+
+    <h2>動画作品</h2>
+
+    <div class="box">
+
+        <video controls width="100%">
+            <source src="videos/movie.mp4" type="video/mp4">
+        </video>
+
+        <p>
+            制作した動画作品です。
+        </p>
+
+    </div>
+
+</section>
+    </div>
+
+<section id="skills">
+    <h2>スキル・使用ソフト</h2>
+
+    <div class="box">
+
+        <h3>使用ソフト</h3>
+
+        <ul>
+            <li>CLIP STUDIO PAINT</li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Illustrator</li>
+            <li>Adobe After Effects</li>
+            <li>Adobe Premiere Pro</li>
+            <li>Studio One</li>
+        </ul>
+
+        <h3>学習中</h3>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Microsoft Excel（基本操作）</li>
+            <li>ITパスポート</li>
+            <li>AutoCAD</li>
+
+        </ul>
+
+    </div>
+</section>
+
+  <footer>
+    <p>© 2026 Natsu Nakazawa</p>
+  </footer>
+
+</body>
+</html>
